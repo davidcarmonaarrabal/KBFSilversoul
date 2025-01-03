@@ -1,10 +1,4 @@
 import Image from "next/image";
-import { Pixelify_Sans } from "next/font/google";
-
-const pixelifySans = Pixelify_Sans({
-  subsets: ["latin"],
-  variable: "--font-pixelify-sans",
-});
 
 export default function Home() {
   return (
