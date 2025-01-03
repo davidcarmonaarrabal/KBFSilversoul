@@ -21,6 +21,7 @@ export default function Home() {
           <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Mi trabajo</button>
           <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Recomendaciones</button>
           <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Sobre mí</button>
+          <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Mods</button>
         </div>
       </header>
 
