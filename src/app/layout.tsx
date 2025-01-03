@@ -31,10 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased bg-orange-50`} 
+        className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased bg-orange-50 ${pixelifySans.className} bg-[url('/Keycap.png')] bg-repeat bg-[300px_300px] animate-moveBackground min-h-screen`} 
       >
         {children}
       </body>
     </html>
   );
 }
+
+
