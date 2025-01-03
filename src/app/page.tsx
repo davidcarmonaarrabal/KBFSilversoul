@@ -28,9 +28,10 @@ export default function Home() {
             className="object-cover rounded-xl"
           />
         </div>
-        <div className="absolute z-10 text-white bg-black bg-opacity-70 p-4 rounded text-4xl">
-          <h1>As simple as beautiful and useful</h1>
+        <div className="absolute z-10 text-white bg-black bg-opacity-70 p-4 rounded-2xl text-4xl transform transition duration-700 hover:scale-110 hover:text-yellow-500 cursor-pointer">
+          <p>As simple as beautiful and useful</p>
         </div>
+
       </main>
     </div>
   );
