@@ -1,3 +1,4 @@
+// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 export default {
@@ -8,9 +9,17 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      animation: {
+        moveBackground: "moveBackground 20s linear infinite",
+      },
+      keyframes: {
+        moveBackground: {
+          "0%": { backgroundPosition: "0 0" },
+          "100%": { backgroundPosition: "300px 300px" },
+        },
+      },
+      backgroundSize: {
+        '300px': '300px 300px',
       },
     },
   },

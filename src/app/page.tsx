@@ -8,15 +8,7 @@ const pixelifySans = Pixelify_Sans({
 
 export default function Home() {
   return (
-    <div
-      className={`${pixelifySans.className} flex flex-col items-center`}
-      style={{
-        backgroundImage: 'url("/Keycap.png")',
-        backgroundRepeat: "repeat",
-        backgroundSize: "300px 300px",
-      }}
-    >
-
+    <div className={`${pixelifySans.className} flex flex-col items-center bg-[url('/Keycap.png')] bg-repeat bg-[300px_300px] animate-moveBackground`}>
       <header className="m-4 mt-10 pl-10 pr-10 flex flex-row justify-center space-x-96 bg-white border-black border-4 rounded-xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)]">
         <div className="flex flex-row justify-center">
           <Image src="/logo1.png" alt="logo" width={100} height={60} />
