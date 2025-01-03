@@ -19,9 +19,9 @@ export default function Home() {
         </div>
         <div className="space-x-3 pt-10">
           <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Mi trabajo</button>
+          <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Mods</button>
           <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Recomendaciones</button>
           <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Sobre mí</button>
-          <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300">Mods</button>
         </div>
       </header>
 
