@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col items-center">
       
 
-      <main className="m-4 bg-white border-black border-4 rounded-xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)] w-[1080px] h-[700px] p-0 flex justify-center items-center overflow-hidden relative">
+      <main className="m-4 bg-white border-black border-4 rounded-2xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)] w-[1080px] h-[700px] p-0 flex justify-center items-center overflow-hidden relative">
         <div className="absolute inset-0">
           <Image
             src="/keyboards.jpg"
