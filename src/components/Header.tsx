@@ -15,11 +15,21 @@ const Header: React.FC = () => {
                 </Link>
             </div>
             <div className="space-x-3 pt-10">
-                <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Mi trabajo</button>
-                <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Mods</button>
-                <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Tester</button>
-                <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Recomendaciones</button>
-                <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Sobre mí</button>
+                <Link href={''}>
+                    <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">My work</button>
+                </Link>
+                <Link href={''}>
+                    <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Mods</button>
+                </Link>
+                <Link href={''}>
+                    <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Tester</button>
+                </Link>
+                <Link href={''}>
+                    <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Recomendations</button>
+                </Link>
+                <Link href={'/about_me'}>
+                    <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">About me</button>
+                </Link>
             </div>
         </header>
     );

@@ -10,10 +10,10 @@ const Footer: React.FC = () => {
                 <nav>
                     <ul className="flex space-x-4">
                         <li>
-                            <a href="/about" className="text-gray-400 hover:text-white transition-colors">About us</a>
+                            <a href="/about" className="text-gray-400 hover:text-white transition-colors">About me</a>
                         </li>
                         <li>
-                            <a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact us</a>
+                            <a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact me</a>
                         </li>
                     </ul>
                 </nav>
