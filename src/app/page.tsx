@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,13 +12,15 @@ export default function Home() {
             src="/img/keyboards.jpg"
             alt="keyboards"
             fill
-            className="object-cover rounded-xl"
+            className="object-cover rounded-xl max-w-full h-auto"
           />
         </div>
 
-        <div className="backdrop-blur-[3px] backdrop-saturate-[200%]  bg-opacity-10border border-opacity-20 border-black border-4 absolute z-10 text-white p-4 rounded-2xl text-4xl transform transition duration-700 hover:scale-110 hover:text-yellow-500 cursor-pointer">
-          <p>As simple as beautiful and useful</p>
-        </div>
+        <Link href={'/my_work'} className="flex flex-col items-center justify-center">
+          <div className="backdrop-blur-[20px] backdrop-saturate-[200%]  bg-opacity-10border border-opacity-20 border-black border-4 absolute z-10 text-white p-4 rounded-2xl text-4xl transform transition duration-700 hover:scale-110 hover:text-yellow-500 cursor-pointer">
+            <p>As simple as beautiful and useful</p>
+          </div>
+        </Link>  
 
       </main>
     </div>

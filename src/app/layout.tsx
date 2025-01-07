@@ -36,6 +36,7 @@ export default function RootLayout({
       <head>
         <meta name="description" content={metadata.description ?? ''} />
         <title>{String(metadata.title ?? 'Default title')}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased bg-orange-50 ${pixelifySans.className} bg-[url('/img/Keycap.png')] bg-repeat bg-[300px_300px] animate-moveBackground flex flex-col min-h-screen`}>
         <Header></Header>
