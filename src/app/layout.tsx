@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased bg-orange-50 ${pixelifySans.className} bg-[url('/Keycap.png')] bg-repeat bg-[300px_300px] animate-moveBackground flex flex-col min-h-screen`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased bg-orange-50 ${pixelifySans.className} bg-[url('/img/Keycap.png')] bg-repeat bg-[300px_300px] animate-moveBackground flex flex-col min-h-screen`}>
         <Header></Header>
         <div className="flex flex-col items-center justify-center flex-grow">
           {children}

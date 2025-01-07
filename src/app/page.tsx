@@ -8,7 +8,7 @@ export default function Home() {
       <main className="m-4 bg-white border-black border-4 rounded-2xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)] w-[1080px] h-[650px] p-0 flex justify-center items-center overflow-hidden relative flex-grow">
         <div className="absolute inset-0">
           <Image
-            src="/keyboards.jpg"
+            src="/img/keyboards.jpg"
             alt="keyboards"
             fill
             className="object-cover rounded-xl"
