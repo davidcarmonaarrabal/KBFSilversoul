@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Pixelify_Sans } from "next/font/google";
 
 import "./globals.css";
-import Image from "next/image";
-import Link from "next/link";
+import Footer from "@/components/footer";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,28 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased bg-orange-50 ${pixelifySans.className} bg-[url('/Keycap.png')] bg-repeat bg-[300px_300px] animate-moveBackground min-h-screen`} 
-      >
-        <header className="m-4 mt-10 pl-5 pr-5 flex flex-row justify-center space-x-96 bg-white border-black border-4 rounded-xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)]">
-          <div className="flex flex-row justify-center">
-            <Link href="/" className="flex flex-row justify-center">
-              <Image src="/logo1.png" alt="logo" width={100} height={60} />
-              <p className="text-4xl pt-6 pl-3 text-black flex flex-col">
-                Mechanical Keyboards Fun{" "}
-                <span className="text-2xl">by Silversoul07</span>
-              </p>
-            </Link>
-          </div>
-          <div className="space-x-3 pt-10">
-            <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Mi trabajo</button>
-            <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Mods</button>
-            <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Tester</button>
-            <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Recomendaciones</button>
-            <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">Sobre mí</button>
-          </div>
-        </header>
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased bg-orange-50 ${pixelifySans.className} bg-[url('/Keycap.png')] bg-repeat bg-[300px_300px] animate-moveBackground flex flex-col min-h-screen`}>
+        <Header></Header>
+        <div className="flex flex-col items-center justify-center flex-grow">
+          {children}
+        </div>
+        <Footer></Footer>
       </body>
     </html>
   );
