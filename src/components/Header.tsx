@@ -4,17 +4,17 @@ import React from 'react';
 
 const Header: React.FC = () => {
     return (
-        <header className="m-4 mt-5 pl-5 pr-5 flex flex-row justify-center space-x-96 bg-white border-black border-4 rounded-xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)]">
-            <div className="flex flex-row justify-center">
+        <header className="m-4 mt-5 pl-5 pr-5 flex flex-col justify-center bg-white border-black border-4 rounded-xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)] md:flex-row md:space-x-64">
+            <div className="flex flex-col justify-center">
                 <Link href="/" className="flex flex-row justify-center">
-                    <Image src="/img/logo1.png" alt="logo" width={100} height={60} className='max-w-full h-auto'/>
-                    <p className="text-4xl pt-6 pl-3 text-black flex flex-col">
+                    <Image src="/img/logo1.png" alt="logo" width={120} height={60} className='max-w-full h-auto'/>
+                    <p className="text-4xl pl-3 justify-center text-black flex flex-col lg:items-center">
                         Mechanical Keyboards Fun{" "}
                         <span className="text-2xl">by Silversoul07</span>
                     </p>
                 </Link>
             </div>
-            <div className="space-x-3 pt-10">
+            <div className="flex flex-col items-center justify-center pt-5 lg:flex-row lg:space-x-3 lg:items-center md:pt-0">
                 <Link href={'/my_work'}>
                     <button className="hover:text-blue-900 hover:border-b-2 hover:border-black transition duration-300 text-black">My work</button>
                 </Link>
