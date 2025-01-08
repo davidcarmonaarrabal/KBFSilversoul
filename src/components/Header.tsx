@@ -7,7 +7,8 @@ const Header: React.FC = () => {
         <header className="m-4 mt-5 pl-5 pr-5 flex flex-col justify-center bg-white border-black border-4 rounded-xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)] md:flex-row md:space-x-64">
             <div className="flex flex-col justify-center">
                 <Link href="/" className="flex flex-row justify-center">
-                    <Image src="/img/logo1.png" alt="logo" width={120} height={60} className='max-w-full h-auto'/>
+                    <Image src="/img/logo1.png" alt="logo" width={120} height={60} 
+                    className='max-w-full h-auto'/>
                     <p className="text-4xl pl-3 justify-center text-black flex flex-col lg:items-center">
                         Mechanical Keyboards Fun{" "}
                         <span className="text-2xl">by Silversoul07</span>
