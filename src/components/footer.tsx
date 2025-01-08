@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
                 <nav>
                     <ul className="flex space-x-4">
                         <li>
-                            <a href="/about_me" className="text-gray-400 hover:text-white transition-colors">About me</a>
+                            <Link href={'/about_me'} className="text-gray-400 hover:text-white transition-colors">About me</Link>
                         </li>
                         <li>
-                            <a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact me</a>
+                            <Link href={'/contact'} className="text-gray-400 hover:text-white transition-colors">Contact me</Link>
                         </li>
                     </ul>
                 </nav>
