@@ -25,7 +25,7 @@
             setStatus('Enviando...'); // Mostrar mensaje de carga mientras se envía el correo
 
             try {
-                const response = await fetch('https://sendemail-3fujvy5ywq-uc.a.run.app/send-email', {
+                const response = await fetch('https://sendemail-3fujvy5ywq-uc.a.run.app//send-email', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData),
