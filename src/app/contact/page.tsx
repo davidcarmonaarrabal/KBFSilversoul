@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [status, setStatus] = useState<string>(''); // Definir explicitamente el tipo como string
+    const [status, setStatus] = useState<string>(''); // Explicitamente definido como string
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({
@@ -17,7 +17,7 @@ const ContactPage = () => {
         e.preventDefault();
 
         // Validación simple del correo electrónico
-        if (!formData.email.match(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/)) {
+        if (!formData.email.match(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/)) {    
             setStatus('Por favor ingrese un correo electrónico válido');
             return;
         }
@@ -25,7 +25,7 @@ const ContactPage = () => {
         setStatus('Enviando...'); // Mostrar mensaje de carga mientras se envía el correo
 
         try {
-            const response = await fetch('/api/contact', {
+            const response = await fetch('https://sendemail-3fujvy5ywq-uc.a.run.app/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
@@ -35,7 +35,8 @@ const ContactPage = () => {
                 setStatus('Mensaje enviado exitosamente');
                 setFormData({ name: '', email: '', message: '' });
             } else {
-                setStatus('Hubo un problema al enviar el mensaje');
+                const errorResponse = await response.json();
+                setStatus(`Error: ${errorResponse.error || 'Hubo un problema al enviar el mensaje'}`);
             }
         } catch (error) {
             setStatus(`Error al enviar el mensaje: ${error instanceof Error ? error.message : 'Desconocido'}`);
