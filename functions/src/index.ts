@@ -1,18 +1,23 @@
 import * as functions from 'firebase-functions';
 import express from 'express';
 import sgMail from '@sendgrid/mail';
+import cors from 'cors';
 
-// Accede a la clave de API de SendGrid desde las variables de entorno
 sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 const app = express();
+app.use(cors({ origin: true })); // Permitir todas las solicitudes
 
+// Middleware para parsear JSON
+app.use(express.json());
+
+// Ruta para manejar solicitudes POST
 app.post('/send-email', async (req, res) => {
     const { name, email, message } = req.body;
 
     const msg = {
-        to: 'destinatario@example.com', // Cambia esto por tu correo de destino
-        from: 'remitente@example.com',  // Cambia esto por tu correo de remitente
+        to: 'davidcarmonaarrabal@davidca.es',
+        from: 'davidcarmonaarrabal@davidca.es',
         subject: 'Nuevo mensaje de contacto',
         text: `Nombre: ${name}\nCorreo: ${email}\nMensaje: ${message}`,
     };
@@ -26,5 +31,10 @@ app.post('/send-email', async (req, res) => {
     }
 });
 
-// Exporta la función para que Firebase pueda ejecutarla
+// Ruta GET opcional para verificar que la función está activa
+app.get('/', (req, res) => {
+    res.send('La función está activa. Usa POST en /send-email para enviar correos.');
+});
+
+// Exportar la función
 export const sendEmail = functions.https.onRequest(app);
