@@ -3,7 +3,7 @@ import express from 'express';
 import sgMail from '@sendgrid/mail';
 import cors from 'cors';
 
-sgMail.setApiKey("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");
+sgMail.setApiKey("");
 
 const app = express();
 app.use(cors({ origin: true })); // Permitir todas las solicitudes
