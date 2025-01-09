@@ -1,0 +1,506 @@
+[debug] [2025-01-09T11:35:00.731Z] ----------------------------------------------------------------------
+[debug] [2025-01-09T11:35:00.734Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\srios\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2025-01-09T11:35:00.735Z] CLI Version:   13.29.1
+[debug] [2025-01-09T11:35:00.735Z] Platform:      win32
+[debug] [2025-01-09T11:35:00.735Z] Node Version:  v22.11.0
+[debug] [2025-01-09T11:35:00.735Z] Time:          Thu Jan 09 2025 12:35:00 GMT+0100 (hora estándar de Europa central)
+[debug] [2025-01-09T11:35:00.735Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-09T11:35:00.805Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-09T11:35:00.805Z] > authorizing via signed-in user (davidcarmonaarrabal18@gmail.com)
+[debug] [2025-01-09T11:35:00.805Z] [iam] checking project davidca-43b02 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-01-09T11:35:00.807Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:00.807Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:00.808Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions [none]
+[debug] [2025-01-09T11:35:00.808Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:00.808Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-01-09T11:35:01.546Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions 200
+[debug] [2025-01-09T11:35:01.546Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-01-09T11:35:01.546Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:01.546Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:01.546Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-01-09T11:35:01.546Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-01-09T11:35:02.247Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-01-09T11:35:02.247Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'davidca-43b02'...
+[info] 
+[info] i  deploying functions 
+[info] +  functions: Finished running predeploy script. 
+[debug] [2025-01-09T11:35:02.252Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:02.253Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:02.253Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 [none]
+[debug] [2025-01-09T11:35:02.422Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 200
+[debug] [2025-01-09T11:35:02.422Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 {"projectNumber":"806524625937","projectId":"davidca-43b02","lifecycleState":"ACTIVE","name":"davidca","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2024-12-26T11:55:22.806488Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-01-09T11:35:02.427Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:02.427Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:02.427Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:02.427Z] Checked if tokens are valid: true, expires at: 1736424376777
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-01-09T11:35:02.428Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:02.428Z] Checked if tokens are valid: true, expires at: 1736424376777
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-01-09T11:35:02.430Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:02.430Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:02.430Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-09T11:35:02.430Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:02.433Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-01-09T11:35:02.434Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:02.436Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com [none]
+[debug] [2025-01-09T11:35:02.436Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:02.438Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com [none]
+[debug] [2025-01-09T11:35:02.438Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:03.309Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com 200
+[debug] [2025-01-09T11:35:03.310Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-01-09T11:35:03.324Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com 200
+[debug] [2025-01-09T11:35:03.324Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-01-09T11:35:03.326Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com 200
+[debug] [2025-01-09T11:35:03.326Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-01-09T11:35:03.338Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-09T11:35:03.338Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-01-09T11:35:03.339Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:03.339Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:03.339Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig [none]
+[debug] [2025-01-09T11:35:03.642Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig 200
+[debug] [2025-01-09T11:35:03.643Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig {"projectId":"davidca-43b02","storageBucket":"davidca-43b02.firebasestorage.app"}
+[debug] [2025-01-09T11:35:03.643Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:03.643Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:03.643Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs [none]
+[debug] [2025-01-09T11:35:03.942Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs 200
+[debug] [2025-01-09T11:35:03.942Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs {"configs":[{"name":"projects/davidca-43b02/configs/sendgrid"}]}
+[debug] [2025-01-09T11:35:03.942Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:03.942Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:03.942Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables [none]
+[debug] [2025-01-09T11:35:04.154Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables 200
+[debug] [2025-01-09T11:35:04.155Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables {"variables":[{"name":"projects/davidca-43b02/configs/sendgrid/variables/apikey","updateTime":"2025-01-09T11:08:42.893235893Z"}]}
+[debug] [2025-01-09T11:35:04.155Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:04.155Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:04.155Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey [none]
+[debug] [2025-01-09T11:35:04.363Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey 200
+[debug] [2025-01-09T11:35:04.363Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey {"name":"projects/davidca-43b02/configs/sendgrid/variables/apikey","updateTime":"2025-01-09T11:08:42.893235893Z","text":"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"}
+[debug] [2025-01-09T11:35:04.366Z] Validating nodejs source
+[debug] [2025-01-09T11:35:08.542Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-01-09T11:35:08.542Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2025-01-09T11:35:08.543Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-01-09T11:35:08.553Z] Found firebase-functions binary at 'F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8752
+
+[error] node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8752
+    at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2066:7)
+    at Function.listen (F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\lib\index.js:66:5)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8752
+}
+
+Node.js v22.11.0
+
+[debug] [2025-01-09T11:35:13.209Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8752/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8752/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2025-01-09T11:35:13.323Z] FetchError: request to http://127.0.0.1:8752/__/functions.yaml failed, reason: read ECONNRESET
+    at ClientRequest.<anonymous> (C:\Users\srios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:103:11)
+    at Socket.socketErrorListener (node:_http_client:506:5)
+    at Socket.emit (node:events:518:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-09T11:35:57.033Z] ----------------------------------------------------------------------
+[debug] [2025-01-09T11:35:57.037Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\srios\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2025-01-09T11:35:57.037Z] CLI Version:   13.29.1
+[debug] [2025-01-09T11:35:57.037Z] Platform:      win32
+[debug] [2025-01-09T11:35:57.037Z] Node Version:  v22.11.0
+[debug] [2025-01-09T11:35:57.038Z] Time:          Thu Jan 09 2025 12:35:57 GMT+0100 (hora estándar de Europa central)
+[debug] [2025-01-09T11:35:57.038Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-09T11:35:57.101Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-09T11:35:57.102Z] > authorizing via signed-in user (davidcarmonaarrabal18@gmail.com)
+[debug] [2025-01-09T11:35:57.102Z] [iam] checking project davidca-43b02 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-01-09T11:35:57.104Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:57.104Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:57.104Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions [none]
+[debug] [2025-01-09T11:35:57.104Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:57.105Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-01-09T11:35:57.807Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions 200
+[debug] [2025-01-09T11:35:57.807Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-01-09T11:35:57.807Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:57.807Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:57.807Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-01-09T11:35:57.807Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-01-09T11:35:58.464Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-01-09T11:35:58.464Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'davidca-43b02'...
+[info] 
+[info] i  deploying functions 
+[info] +  functions: Finished running predeploy script. 
+[debug] [2025-01-09T11:35:58.468Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:58.468Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:58.468Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 [none]
+[debug] [2025-01-09T11:35:58.648Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 200
+[debug] [2025-01-09T11:35:58.649Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 {"projectNumber":"806524625937","projectId":"davidca-43b02","lifecycleState":"ACTIVE","name":"davidca","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2024-12-26T11:55:22.806488Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-01-09T11:35:58.651Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:58.651Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:58.651Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:58.651Z] Checked if tokens are valid: true, expires at: 1736424376777
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-01-09T11:35:58.652Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:58.652Z] Checked if tokens are valid: true, expires at: 1736424376777
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-01-09T11:35:58.652Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:58.652Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:58.653Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-09T11:35:58.653Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:58.654Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-01-09T11:35:58.654Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:58.655Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com [none]
+[debug] [2025-01-09T11:35:58.655Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:58.656Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com [none]
+[debug] [2025-01-09T11:35:58.656Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:35:59.485Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com 200
+[debug] [2025-01-09T11:35:59.486Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-01-09T11:35:59.489Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com 200
+[debug] [2025-01-09T11:35:59.489Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-01-09T11:35:59.499Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-09T11:35:59.500Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-01-09T11:35:59.504Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com 200
+[debug] [2025-01-09T11:35:59.504Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-01-09T11:35:59.504Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:59.504Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:59.504Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig [none]
+[debug] [2025-01-09T11:35:59.784Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig 200
+[debug] [2025-01-09T11:35:59.785Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig {"projectId":"davidca-43b02","storageBucket":"davidca-43b02.firebasestorage.app"}
+[debug] [2025-01-09T11:35:59.785Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:59.785Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:35:59.785Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs [none]
+[debug] [2025-01-09T11:36:00.051Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs 200
+[debug] [2025-01-09T11:36:00.051Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs {"configs":[{"name":"projects/davidca-43b02/configs/sendgrid"}]}
+[debug] [2025-01-09T11:36:00.051Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:36:00.051Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:36:00.052Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables [none]
+[debug] [2025-01-09T11:36:00.241Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables 200
+[debug] [2025-01-09T11:36:00.242Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables {"variables":[{"name":"projects/davidca-43b02/configs/sendgrid/variables/apikey","updateTime":"2025-01-09T11:08:42.893235893Z"}]}
+[debug] [2025-01-09T11:36:00.242Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:36:00.242Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:36:00.242Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey [none]
+[debug] [2025-01-09T11:36:00.453Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey 200
+[debug] [2025-01-09T11:36:00.453Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey {"name":"projects/davidca-43b02/configs/sendgrid/variables/apikey","updateTime":"2025-01-09T11:08:42.893235893Z","text":"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"}
+[debug] [2025-01-09T11:36:00.457Z] Validating nodejs source
+[debug] [2025-01-09T11:36:04.812Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-01-09T11:36:04.813Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2025-01-09T11:36:04.815Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-01-09T11:36:04.829Z] Found firebase-functions binary at 'F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8894
+
+[error] node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8894
+    at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2066:7)
+    at Function.listen (F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\lib\index.js:66:5)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8894
+}
+
+Node.js v22.11.0
+
+[debug] [2025-01-09T11:36:09.965Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8894/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8894/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2025-01-09T11:36:10.099Z] FetchError: request to http://127.0.0.1:8894/__/functions.yaml failed, reason: read ECONNRESET
+    at ClientRequest.<anonymous> (C:\Users\srios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:103:11)
+    at Socket.socketErrorListener (node:_http_client:506:5)
+    at Socket.emit (node:events:518:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-09T11:39:39.299Z] ----------------------------------------------------------------------
+[debug] [2025-01-09T11:39:39.302Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\srios\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-09T11:39:39.303Z] CLI Version:   13.29.1
+[debug] [2025-01-09T11:39:39.303Z] Platform:      win32
+[debug] [2025-01-09T11:39:39.303Z] Node Version:  v22.11.0
+[debug] [2025-01-09T11:39:39.303Z] Time:          Thu Jan 09 2025 12:39:39 GMT+0100 (hora estándar de Europa central)
+[debug] [2025-01-09T11:39:39.303Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-09T11:39:39.362Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-09T11:39:39.362Z] > authorizing via signed-in user (davidcarmonaarrabal18@gmail.com)
+[debug] [2025-01-09T11:39:39.362Z] [iam] checking project davidca-43b02 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-09T11:39:39.364Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:39.364Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:39.364Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions [none]
+[debug] [2025-01-09T11:39:39.365Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:39:39.365Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-09T11:39:40.081Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions 200
+[debug] [2025-01-09T11:39:40.082Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-09T11:39:40.083Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:40.083Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:40.083Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-01-09T11:39:40.083Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-01-09T11:39:40.736Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-01-09T11:39:40.736Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/davidca-43b02/serviceAccounts/davidca-43b02@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-01-09T11:39:40.737Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:40.737Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:40.737Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02 [none]
+[debug] [2025-01-09T11:39:41.014Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02 200
+[debug] [2025-01-09T11:39:41.014Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02 {"projectId":"davidca-43b02","projectNumber":"806524625937","displayName":"davidca","name":"projects/davidca-43b02","resources":{"hostingSite":"davidca-43b02"},"state":"ACTIVE","etag":"1_59b837f3-71be-4f93-8301-eae2fb0551e8"}
+[info] 
+[info] === Deploying to 'davidca-43b02'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] +  functions: Finished running predeploy script. 
+[debug] [2025-01-09T11:39:41.019Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:41.019Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:41.019Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 [none]
+[debug] [2025-01-09T11:39:41.198Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 200
+[debug] [2025-01-09T11:39:41.199Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/davidca-43b02 {"projectNumber":"806524625937","projectId":"davidca-43b02","lifecycleState":"ACTIVE","name":"davidca","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2024-12-26T11:55:22.806488Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-01-09T11:39:41.201Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:41.201Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:41.202Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:41.202Z] Checked if tokens are valid: true, expires at: 1736424376777
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-01-09T11:39:41.202Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:41.202Z] Checked if tokens are valid: true, expires at: 1736424376777
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-01-09T11:39:41.203Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:41.203Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:41.203Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-01-09T11:39:41.203Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:39:41.204Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-01-09T11:39:41.204Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:39:41.205Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com [none]
+[debug] [2025-01-09T11:39:41.205Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:39:41.206Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com [none]
+[debug] [2025-01-09T11:39:41.206Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com x-goog-quota-user=projects/davidca-43b02
+[debug] [2025-01-09T11:39:42.020Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com 200
+[debug] [2025-01-09T11:39:42.020Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-01-09T11:39:42.044Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com 200
+[debug] [2025-01-09T11:39:42.044Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-01-09T11:39:42.046Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com 200
+[debug] [2025-01-09T11:39:42.046Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-01-09T11:39:42.046Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com 200
+[debug] [2025-01-09T11:39:42.046Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/davidca-43b02/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-01-09T11:39:42.046Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:42.046Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:42.047Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig [none]
+[debug] [2025-01-09T11:39:42.269Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig 200
+[debug] [2025-01-09T11:39:42.270Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/davidca-43b02/adminSdkConfig {"projectId":"davidca-43b02","storageBucket":"davidca-43b02.firebasestorage.app"}
+[debug] [2025-01-09T11:39:42.271Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:42.271Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:42.271Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs [none]
+[debug] [2025-01-09T11:39:42.531Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs 200
+[debug] [2025-01-09T11:39:42.531Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs {"configs":[{"name":"projects/davidca-43b02/configs/sendgrid"}]}
+[debug] [2025-01-09T11:39:42.532Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:42.532Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:42.532Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables [none]
+[debug] [2025-01-09T11:39:42.726Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables 200
+[debug] [2025-01-09T11:39:42.726Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables {"variables":[{"name":"projects/davidca-43b02/configs/sendgrid/variables/apikey","updateTime":"2025-01-09T11:08:42.893235893Z"}]}
+[debug] [2025-01-09T11:39:42.726Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:42.726Z] Checked if tokens are valid: true, expires at: 1736424376777
+[debug] [2025-01-09T11:39:42.727Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey [none]
+[debug] [2025-01-09T11:39:42.925Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey 200
+[debug] [2025-01-09T11:39:42.925Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/davidca-43b02/configs/sendgrid/variables/apikey {"name":"projects/davidca-43b02/configs/sendgrid/variables/apikey","updateTime":"2025-01-09T11:08:42.893235893Z","text":"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"}
+[debug] [2025-01-09T11:39:42.930Z] Validating nodejs source
+[debug] [2025-01-09T11:39:47.012Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2025-01-09T11:39:47.012Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2025-01-09T11:39:47.014Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-01-09T11:39:47.028Z] Found firebase-functions binary at 'F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8463
+
+[error] node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8463
+    at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2066:7)
+    at Function.listen (F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (F:\Escritorio\Cosas\my-mechanical-keyboards-portfolio\functions\lib\index.js:66:5)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1943:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8463
+}
+
+Node.js v22.11.0
+
+[debug] [2025-01-09T11:39:51.269Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8463/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8463/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2025-01-09T11:39:51.378Z] FetchError: request to http://127.0.0.1:8463/__/functions.yaml failed, reason: read ECONNRESET
+    at ClientRequest.<anonymous> (C:\Users\srios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:103:11)
+    at Socket.socketErrorListener (node:_http_client:506:5)
+    at Socket.emit (node:events:518:28)
+    at Socket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[error] 
+[error] Error: An unexpected error has occurred.

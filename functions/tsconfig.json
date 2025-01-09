@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",  // Cambiado a CommonJS para mayor compatibilidad con Node.js
+    "esModuleInterop": true,
+    "moduleResolution": "node",  // Ajustado para resolver módulos de Node.js
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",  // Este es el directorio donde se guardarán los archivos .js compilados
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES6"  // Asegúrate de usar un objetivo compatible con Firebase Functions (ES6 o superior)
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"  // Asegúrate de que los archivos .ts estén en la carpeta src
+  ]
+}
