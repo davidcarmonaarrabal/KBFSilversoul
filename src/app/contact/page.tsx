@@ -67,9 +67,9 @@
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <button type="submit" className='bg-yellow-200 p-2 rounded-lg border-black border-2 hover:bg-yellow-400
-                            transition duration-300 w-full text-2xl'>Send message</button>
+                            transition duration-300 w-full text-2x text-black'>Send message</button>
                         </div>
-                        {status && <p className='text-2xl'>{status}</p>}
+                        {status && <p className='text-2xl text-black'>{status}</p>}
                     </form>
                 </div>
             </div>
