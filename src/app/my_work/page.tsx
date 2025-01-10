@@ -1,9 +1,9 @@
-import Maintenance from "@/components/Maintenance";
+import MiniCKeyboard from "@/components/MiniCKeyboard";
 
 export default function Home() {
     return (
         <div>
-            <Maintenance></Maintenance>
+            <MiniCKeyboard></MiniCKeyboard>
         </div>
     );
 }

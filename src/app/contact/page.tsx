@@ -45,7 +45,7 @@
             <div style={{ padding: '2rem' }}>
                 <h1 className='text-black text-2xl'>Contact me:</h1>
                 <div className='bg-white border-black border-4 rounded-xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)] w-[345px] sm:w-[615px] 
-                md:w-[740px] lg:w-[1000px] xl:w-[1240px] 2xl:w-[1500px]'>
+                md:w-[740px] lg:w-[1000px] xl:w-[1240px] 2xl:w-[1500px] m-6'>
                     <form onSubmit={handleSubmit} className='p-2'>
                         <div>
                             <div>
