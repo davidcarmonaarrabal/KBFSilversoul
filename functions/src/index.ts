@@ -4,15 +4,13 @@ import sgMail from '@sendgrid/mail';
 import cors from 'cors';
 
 
-sgMail.setApiKey("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");
+sgMail.setApiKey("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");
 
 const app = express();
-app.use(cors({ origin: true })); // Permitir todas las solicitudes
+app.use(cors({ origin: true })); 
 
-// Middleware para parsear JSON
 app.use(express.json());
 
-// Ruta para manejar solicitudes POST
 app.post('/send-email', async (req, res) => {
     const { name, email, message } = req.body;
 
@@ -28,14 +26,12 @@ app.post('/send-email', async (req, res) => {
         res.status(200).json({ success: true });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ error: 'Error al enviar el correo' });
+        res.status(500).json({ error: 'Error at sending the email' });
     }
 });
 
-// Ruta GET opcional para verificar que la función está activa
 app.get('/', (req, res) => {
     res.send('La función está activa. Usa POST en /send-email para enviar correos.');
 });
 
-// Exportar la función
 export const sendEmail = functions.https.onRequest(app);
