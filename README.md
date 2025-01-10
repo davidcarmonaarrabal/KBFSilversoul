@@ -22,6 +22,8 @@ This website is developed in **Next.js**, using **Tailwind** and **CSS** for sty
 
 I also use **Hostinger** for the website's domain and **Firebase** for hosting.
 
+Running the backend on **Google Cloud** and using **Sendgrid** to make the contact form works.
+
 # Visit my website!
 
 You can [visit my website here](https://davidca.es/)! For now, the domain is ***davidca.es***, but it *will change in some point of the development*.
