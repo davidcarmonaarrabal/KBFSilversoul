@@ -1,9 +1,9 @@
-import Maintenance from "@/components/Maintenance";
+import ModsMain from "@/components/ModsMain";
 
 export default function Home() {
     return (
         <div>
-            <Maintenance></Maintenance>
+            <ModsMain></ModsMain>
         </div>
     );
 }
