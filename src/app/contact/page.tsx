@@ -17,7 +17,7 @@
             e.preventDefault();
 
             if (!formData.email.match(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/)) {
-                setStatus('Por favor ingrese un correo electrónico válido');
+                setStatus('Please introduce a valid e-mail');
                 return;
             }
 
@@ -31,13 +31,13 @@
                 });
 
                 if (response.ok) {
-                    setStatus('Mensaje enviado exitosamente');
+                    setStatus('Message sent!');
                     setFormData({ name: '', email: '', message: '' });
                 } else {
-                    setStatus('Hubo un problema al enviar el mensaje');
+                    setStatus('There was a problem sending the message... :(');
                 }
             } catch (error) {
-                setStatus(`Error al enviar el mensaje: ${error instanceof Error ? error.message : 'Desconocido'}`);
+                setStatus(`Error at sending the message: ${error instanceof Error ? error.message : 'Desconocido'}`);
             }
         };
 
