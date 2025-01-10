@@ -12,7 +12,7 @@ const ModsDiv: React.FC<ModsDivProps> = ({ url, name, link }) => {
         <Link href={link}>
             <div className="w-[345px] h-[345px] bg-yellow-200 flex flex-col items-center
             justify-center border-black border-4 rounded-lg shadow-[5px_5px_0px_rgba(0,0,0,0.1)]
-            hover:bg-yellow-300 transition duration-300 hover:cursor-pointer">
+            hover:bg-yellow-300 transition duration-300 hover:cursor-pointer text-black">
                 
                     <Image src={url} alt={name} width={200} height={200} />
                     <p className="text-center text-4xl">{name}</p>

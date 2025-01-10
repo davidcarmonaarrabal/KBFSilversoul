@@ -51,18 +51,18 @@
                             <div>
                                 <label htmlFor="name" className='text-black'>Your Name:</label>
                                 <input type="text" id="name" name="name" value={formData.name} onChange={handleChange}
-                                required className='text-black border-black border-[2px] bg-yellow-100 rounded-md pl-1 w-full'/>
+                                required className='text-black border-black border-[2px] bg-yellow-100 rounded-md pl-1 w-full focus:bg-yellow-200'/>
                             </div>
                             <div>
                                 <label htmlFor="email" className='text-black'>Your e-mail:</label>
                                 <input type="email" id="email" name="email" value={formData.email} onChange={handleChange}
-                                required className='text-black border-black border-[2px] bg-yellow-100 rounded-md pl-1 w-full'/>
+                                required className='text-black border-black border-[2px] bg-yellow-100 rounded-md pl-1 w-full focus:bg-yellow-200'/>
                             </div>
                             <div>
                                 <label htmlFor="message" className='text-black'>Message:</label>
                                 <textarea id="message" name="message" value={formData.message} onChange={handleChange}
                                 required className='text-black border-black border-[2px] bg-yellow-100 rounded-md pl-1 w-full
-                                h-[300px] resize-none'/>
+                                h-[300px] resize-none focus:bg-yellow-200'/>
                             </div>
                         </div>
                         <div className='flex flex-col items-center justify-center'>
