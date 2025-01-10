@@ -21,7 +21,7 @@
                 return;
             }
 
-            setStatus('Enviando...');
+            setStatus('Sending...');
 
             try {
                 const response = await fetch('https://sendemail-3fujvy5ywq-uc.a.run.app/send-email', {
