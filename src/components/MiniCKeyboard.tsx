@@ -58,7 +58,7 @@ const MiniCKeyboard: React.FC = () => {
                     height={300} 
                     className="border-black border-2 rounded-md sm:w-[500px] sm:h-[500px]
                     md:w-[600px] md:h-[600px] lg:w-[500px] lg:h-[500px] 2xl:w-[650px]
-                    2xl:h-[650px]"
+                    2xl:h-[500px]"
                 />
             </div>
             <div className="m-2 items-center justify-center flex flex-col 2xl:ml-5 text-black">
