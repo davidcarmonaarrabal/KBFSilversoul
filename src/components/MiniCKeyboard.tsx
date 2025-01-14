@@ -19,37 +19,32 @@ interface KeyboardData {
 }
 
 const MiniCKeyboard: React.FC = () => {
-    const [keyboardData, setKeyboardData] = useState<KeyboardData[]>([]); // Lista de teclados
-    const [currentKeyboardIndex, setCurrentKeyboardIndex] = useState<number>(0); // Índice del teclado actual
+    const [keyboardData, setKeyboardData] = useState<KeyboardData[]>([]); 
+    const [currentKeyboardIndex, setCurrentKeyboardIndex] = useState<number>(0); 
 
     useEffect(() => {
-        // Aquí debes colocar la URL de tu endpoint para obtener los teclados
         fetch("https://sendemail-3fujvy5ywq-uc.a.run.app/keyboards")
             .then((response) => response.json())
             .then((data) => {
-                setKeyboardData(data); // Guarda todos los teclados obtenidos
+                setKeyboardData(data);
             })
             .catch((error) => console.error("Error fetching keyboard data:", error));
     }, []);
 
     useEffect(() => {
-        // Cambiar de teclado cada 10 segundos (10000 ms)
         const intervalId = setInterval(() => {
             setCurrentKeyboardIndex((prevIndex) => {
-                return (prevIndex + 1) % keyboardData.length; // Cambia al siguiente teclado, vuelve al inicio si se alcanza el final
+                return (prevIndex + 1) % keyboardData.length;
             });
-        }, 10000); // 10 segundos
+        }, 10000); 
 
-        // Limpiar el intervalo cuando el componente se desmonte
         return () => clearInterval(intervalId);
-    }, [keyboardData]); // Este efecto solo se ejecuta cuando `keyboardData` cambia
+    }, [keyboardData]);
 
-    // Si no hay teclados aún, muestra "Cargando..."
     if (keyboardData.length === 0) {
         return <div>Loading...</div>;
     }
 
-    // Obtener el teclado actual según el índice
     const currentKeyboard = keyboardData[currentKeyboardIndex];
 
     return (
@@ -73,7 +68,7 @@ const MiniCKeyboard: React.FC = () => {
                     <li className="xl:text-2xl">Switches: {currentKeyboard.switches}</li>
                     <li className="xl:text-2xl">Base: {currentKeyboard.base}</li>
                     <li className="xl:text-2xl">Keycaps: {currentKeyboard.keycaps}</li>
-                    <li className="mt-3 xl:text-2xl">{currentKeyboard.descriptionS}</li>
+                    <li className="mt-3 xl:text-2xl">{currentKeyboard.descriptions}</li>
                 </ul>
                 <div className="lg:mt-auto flex justify-center items-center text-black">
                     <button className="bg-yellow-200 p-2 rounded-lg border-black
