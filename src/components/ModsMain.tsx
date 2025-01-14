@@ -8,6 +8,7 @@ type ModItem = {
 
 const modItems: ModItem[] = [
     { url: "/img/KeyboardMini.png", name: "How does a Keyboard works?", link: "/mods/HDAKW/" },
+    { url: "/img/KeyboardsSize.png", name: "Keyboards sizes", link: "/mods/KS/" },
     { url: "/img/Tape.png", name: "Tape Mod", link: "/mods/Tape/" },
     { url: "/img/Isolation.png", name: "Isolation", link: "/mods/Isolation/" },
     { url: "/img/Stab.png", name: "Stabs Lube", link: "/mods/Stab_lube/" },
