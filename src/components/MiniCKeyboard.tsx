@@ -10,8 +10,8 @@ interface KeyboardData {
   base: string;
   keycaps: string;
   keycapsn: number;
-  descriptionS: string;
-  descriptionL: string;
+  descriptions: string;
+  descriptionl: string;
   img: string;
   web: string;
   size: string;
