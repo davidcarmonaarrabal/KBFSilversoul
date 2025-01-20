@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { MousePointerClick } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface KeyboardData {
     name: string;
@@ -51,15 +52,17 @@ const MiniCKeyboard: React.FC = () => {
         <div className='bg-white border-black border-4 rounded-xl shadow-[5px_5px_0px_rgba(0,0,0,0.1)] w-[345px] sm:w-[615px] 
         md:w-[740px] lg:w-[1000px] xl:w-[1240px] 2xl:w-[1500px] flex flex-col m-6 lg:flex-row text-black'>
             <div className="m-2 flex flex-col items-center justify-center">
-                <Image
-                    src={currentKeyboard.img || '/img/maintenance.png'}
-                    alt="Keyboard Image"
-                    width={300}
-                    height={300}
-                    className="border-black border-2 rounded-md sm:w-[500px] sm:h-[500px]
-                    md:w-[600px] md:h-[600px] lg:w-[500px] lg:h-[500px] 2xl:w-[650px]
-                    2xl:h-[500px]"
-                />
+                <Link href={currentKeyboard.web}>
+                    <Image
+                        src={currentKeyboard.img || '/img/maintenance.png'}
+                        alt="Keyboard Image"
+                        width={300}
+                        height={300}
+                        className="border-black border-2 rounded-md sm:w-[500px] sm:h-[500px]
+                        md:w-[600px] md:h-[600px] lg:w-[500px] lg:h-[500px] 2xl:w-[650px]
+                        2xl:h-[500px] hover:cursor-pointer"
+                    />
+                </Link>
             </div>
             <div className="m-2 items-center justify-center flex flex-col 2xl:ml-5 text-black">
                 <ul className="flex flex-col justify-center items-center lg:items-start lg:mt-8
@@ -71,11 +74,13 @@ const MiniCKeyboard: React.FC = () => {
                     <li className="mt-3 xl:text-2xl">{currentKeyboard.descriptions}</li>
                 </ul>
                 <div className="lg:mt-auto flex justify-center items-center text-black">
-                    <button className="bg-yellow-200 p-2 rounded-lg border-black
-                    border-2 flex flex-col items-center justify-center mt-4
-                    hover:bg-yellow-300 transition duration-300">
-                        <MousePointerClick />
-                    </button>
+                    <Link href={currentKeyboard.web}>
+                        <button className="bg-yellow-200 p-2 rounded-lg border-black
+                        border-2 flex flex-col items-center justify-center mt-4
+                        hover:bg-yellow-300 transition duration-300">
+                            <MousePointerClick />
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
