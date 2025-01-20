@@ -1,6 +1,6 @@
 import Link from "next/link";
-
 import { usePathname } from "next/navigation";
+
 
 const Menu: React.FC = () => {
     const pathname = usePathname();
