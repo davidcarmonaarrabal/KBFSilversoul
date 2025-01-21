@@ -77,7 +77,7 @@ const MiniCKeyboard: React.FC = () => {
                     <Link href={currentKeyboard.web}>
                         <button className="bg-yellow-200 p-2 rounded-lg border-black
                         border-2 flex flex-col items-center justify-center mt-4
-                        hover:bg-yellow-300 transition duration-300">
+                        hover:bg-yellow-300 transition duration-300 hover:cursor-pointer">
                             <MousePointerClick />
                         </button>
                     </Link>
