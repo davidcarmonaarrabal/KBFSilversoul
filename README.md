@@ -22,8 +22,12 @@ This website is developed in **Next.js**, using **Tailwind** and **CSS** for sty
 
 I also use **Hostinger** for the website's domain and **Firebase** for hosting.
 
-Running the backend on **Google Cloud** and using **Sendgrid** to make the contact form works.
+Running the backend on **Google Cloud** and using **Sendgrid** to make the contact form and the SQL API works.
 
 # Visit my website!
 
 You can [visit my website here](https://davidca.es/)! For now, the domain is ***davidca.es***, but it *will change in some point of the development*.
+
+# What Am I developing right now?
+
+Now, I'm focushing on ***"My work"*** part, developing the API for the SQL connections, and working both, the *Frontend* and *Backend*, by now, I'm working on the **Keyboard web-page**, will be followed by the **implementation of all Keyboards**, then, will do **animations for the carrousel** and finally **add some navigation utilities** on it.
