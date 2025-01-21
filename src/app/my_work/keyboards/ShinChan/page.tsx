@@ -21,7 +21,7 @@ export default function Home() {
                 the <Link href={'/mods/Types_Switches'} className={`${classLink}`}>switches</Link> whenever I want.
                 </p>
                 <p>In this case, this Keyboard uses tactile silent switches, specifically 
-                    the <Link href={'/switchDetails/OUTEMU Silent Lemon V2'} className={`${classLink}`}>OUTEMU Silent Lemon V2</Link>
+                    the <Link href={`/switchDetails/${encodeURIComponent("OUTEMU Silent Lemon V2")}`} className={`${classLink}`}>OUTEMU Silent Lemon V2</Link>
                 </p>
             </div>
         </div>
