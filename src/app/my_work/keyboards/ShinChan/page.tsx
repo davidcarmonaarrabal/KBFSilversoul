@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-col m-4 bg-white border-black border-4 rounded-xl p-4
         shadow-[5px_5px_0px_rgba(0,0,0,0.1)]">
             <div className="flex flex-col items-center justify-center">
-                <Image src={'/img/keyboards/ShinChan.jpg'} alt="Shin Chan Keyboard" width={600} height={400}
+                <Image src={'/img/keyboards/ShinChan.webp'} alt="Shin Chan Keyboard" width={600} height={400}
                     className="border-black border-4 rounded-lg xl:w-[800px] xl:h-[600px] "/>
             </div>
             <div className="pt-4 flex flex-col mb-4">
@@ -33,6 +33,7 @@ export default function Home() {
                     first of all, I&apos;ve isolated with some foam, made a Tape Mod and clipped the stabs after lubbing them. Also, lubbed all the 
                     switches and added some 3D printed parts to the bottom of the keyboard to make it more inclined.
                 </p>
+                <p className="text-right xl:text-2xl mt-6">What else do you need? This Keyboard is extremely cheap, perfect for carry on with your laptop, silent, comfy and very, very pretty.</p>
             </div>
         </div>
     );

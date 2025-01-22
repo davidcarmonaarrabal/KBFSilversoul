@@ -12,7 +12,7 @@ export default function Home() {
       xl:w-[1260px] 2xl:w-[1500px]">
         <div className="absolute inset-0">
           <Image
-            src="/img/keyboards.jpg"
+            src="/img/keyboards.webp"
             alt="keyboards"
             fill
             className="object-cover rounded-xl max-w-full h-auto"
