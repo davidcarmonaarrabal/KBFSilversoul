@@ -59,7 +59,7 @@ const Switch: React.FC<SwitchProps> = ({ switchId }) => {
     if (error) return <div>Error: {error}</div>;
 
     return (
-        <Link href={switchData?.url || 'https://davidca.es/'}>
+        <Link href={switchData?.url || 'https://davidca.es/'} target="_blank">
             <div className="bg-yellow-200 border-black border-2 rounded-xl flex flex-col 
             items-center justify-center shadow-[5px_5px_0px_rgba(0,0,0,0.1)] mt-4
             sm:flex-row hover:bg-yellow-300 transition duration-300 hover:cursor-pointer">
@@ -67,7 +67,7 @@ const Switch: React.FC<SwitchProps> = ({ switchId }) => {
                     <Image src={switchData?.img || '/img/maintenance.png'} 
                     alt="Switch Image" width={300} height={300}></Image>
                 </div>
-                <div className="sm:ml-4">
+                <div className="sm:ml-4 xl:text-2xl">
                     <p><strong>Switch name:</strong> {switchData?.name}</p>
                     <p><strong>Switch type:</strong> {switchData?.type}</p>
                     <p><strong>Operating force:</strong> {switchData?.operating_force}</p>
