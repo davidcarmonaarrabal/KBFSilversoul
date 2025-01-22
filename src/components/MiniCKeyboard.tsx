@@ -43,7 +43,9 @@ const MiniCKeyboard: React.FC = () => {
     }, [keyboardData]);
 
     if (keyboardData.length === 0) {
-        return <div className="text-black text-2xl">Loading...</div>;
+        return <div className="text-black text-2xl"> 
+            Loading...
+        </div>;
     }
 
     const currentKeyboard = keyboardData[currentKeyboardIndex];
