@@ -39,6 +39,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased bg-orange-50 ${pixelifySans.className} bg-[url('/img/Keycap.png')] bg-repeat bg-[300px_300px] animate-moveBackground flex flex-col min-h-screen`}>
+        <script type="module" defer src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/quantum.js"></script>
         <Header></Header>
         <div className="flex flex-col items-center justify-center flex-grow">
           <AnimatePresence mode="wait">

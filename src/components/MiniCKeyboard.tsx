@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { MousePointerClick } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type {} from 'ldrs'
 
 interface KeyboardData {
     name: string;
@@ -44,7 +45,7 @@ const MiniCKeyboard: React.FC = () => {
 
     if (keyboardData.length === 0) {
         return <div className="text-black text-2xl"> 
-            Loading...
+            Loading...  
         </div>;
     }
 
@@ -78,7 +79,7 @@ const MiniCKeyboard: React.FC = () => {
                 <div className="lg:mt-auto flex justify-center items-center text-black">
                     <Link href={currentKeyboard.web}>
                         <button className="bg-yellow-200 p-2 rounded-lg border-black
-                        border-2 flex flex-col items-center justify-center mt-4
+                        border-2 flex flex-col items-center justify-center mt-4 
                         hover:bg-yellow-300 transition duration-300 hover:cursor-pointer">
                             <MousePointerClick />
                         </button>

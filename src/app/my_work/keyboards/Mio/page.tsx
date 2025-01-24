@@ -13,27 +13,28 @@ export default function Home() {
                     className="border-black border-4 rounded-lg xl:w-[800px] xl:h-[600px] "/>
             </div>
             <div className="pt-4 flex flex-col mb-4">
-                <h1 className="text-2xl xl:text-4xl">Shin Chan Keyboard 65%</h1>
-                <p className="text-left xl:text-2xl mt-6">This was my first custom keyboard, and the one I&apos;ve
-                    used the most.
+                <h1 className="text-2xl xl:text-4xl">Screen Keyboard TKL</h1>
+                <p className="text-left xl:text-2xl mt-6">This is my main keyboard, not fully modded, but for me, the best option for a low budget.
                 </p>
-                <p className="text-right xl:text-2xl mt-6">This keyboard uses a <Link href={'https://s.click.aliexpress.com/e/_opAGTzL'} className={`${classLink}`}>Ziyoulang K68</Link> as
-                    a base, this base is <Link href={'/mods/Connections'} className={`${classLink}`} target="_blank">Hot-Swappable</Link>, this
+                <p className="text-right xl:text-2xl mt-6">This keyboard is an <Link href={'https://s.click.aliexpress.com/e/_oCD9rVx'} className={`${classLink}`}>Attack Shark K86</Link>, 
+                is <Link href={'/mods/Connections'} className={`${classLink}`} target="_blank">Hot-Swappable</Link>, this
                     means that I can easily change
                     the <Link href={'/mods/Types_Switches'} className={`${classLink}`}>switches</Link> whenever I want.
                 </p>
-                <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses tactile silent switches, specifically OUTEMU Silent Lemon V2</p>
-                <Switch switchId={2}></Switch>
-                <p className="text-right xl:text-2xl mt-6">This keyboard is perfect for coding, 
-                    instead of being a mechanical keyboard oriented to game, this has not RGB, and
-                    you can experience some Ghosting if you use it to game, but it is perfect for you 
-                    if code, it&apos;s compact, silent and very satisfactory to use.
+                <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses tactile switches, specifically AKKO Cream Blue Pro V3</p>
+                <Switch switchId={6}></Switch>
+                <p className="text-right xl:text-2xl mt-6">This keyboard is perfect for gaming, also an excellent option to code, 
+                    with an discrete but beautiful RGB, a very simple software and no-ghosting design, this is for me the best cheap keyboard, 
+                    it comes with isolation, tapemod, and a gasket mounting, which reduces vibration transmissions. Also, this keyboard has a knob to control
+                    volume or any function you programe on it, and a mini LCD screen to insert any GIF o see the battery, time, etc.
                 </p>
-                <p className="text-left xl:text-2xl mt-6">Talking about <Link href={'/mods'} className={`${classLink}`}>mods</Link>, this keyboard is the most modded one in my portfolio, 
-                    first of all, I&apos;ve isolated with some foam, made a Tape Mod and clipped the stabs after lubbing them. Also, lubbed all the 
-                    switches and added some 3D printed parts to the bottom of the keyboard to make it more inclined.
+                <p className="text-left xl:text-2xl mt-6">Talking about <Link href={'/mods'} className={`${classLink}`}>mods</Link>, this keyboard has new switches (the stock ones are Linear) 
+                more oriented to coding, but lubed, and a new set of keycaps.
                 </p>
-                <p className="text-right xl:text-2xl mt-6">What else do you need? This Keyboard is extremely cheap, perfect for carry on with your laptop, silent, comfy and very, very pretty.</p>
+                <p className="text-right xl:text-2xl mt-6">This keyboard has 3 types of connection, USB-C, 2.4 GHz Dongle and Bluetooth.</p>
+                <p className="text-left xl:text-2xl mt-6">I highly recommend this keyboard, it has a lot of stock modifications done, it&apos;s cheap and well built, 
+                    and easy to custom.
+                </p>
             </div>
         </div>
     );
