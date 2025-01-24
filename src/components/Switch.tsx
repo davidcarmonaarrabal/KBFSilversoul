@@ -67,7 +67,7 @@ const Switch: React.FC<SwitchProps> = ({ switchId }) => {
                     <Image src={switchData?.img || '/img/maintenance.png'} 
                     alt="Switch Image" width={300} height={300}></Image>
                 </div>
-                <div className="sm:ml-4 xl:text-2xl">
+                <div className="sm:ml-4 xl:text-2xl p-4">
                     <p><strong>Switch name:</strong> {switchData?.name}</p>
                     <p><strong>Switch type:</strong> {switchData?.type}</p>
                     <p><strong>Operating force:</strong> {switchData?.operating_force}</p>
