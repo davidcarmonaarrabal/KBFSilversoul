@@ -54,7 +54,7 @@ export default function RootLayout({
             </motion.div>
           </AnimatePresence>
         </div>
-        <Footer></Footer>
+        <Footer></Footer> 
       </body>
     </html>
   );

@@ -32,7 +32,7 @@ export default function Home() {
                     first of all, I&apos;ve isolated with some foam, made a Tape Mod and clipped the stabs after lubbing them. Also, lubbed all the 
                     switches and added some 3D printed parts to the bottom of the keyboard to make it more inclined.
                 </p>
-                <p className="text-right xl:text-2xl mt-6">What else do you need? This Keyboard is extremely cheap, perfect for carry on with your laptop, silent, comfy and very, very pretty.</p>
+                <p className="text-right xl:text-2xl mt-6">What else do you need? This Keyboard is extremely cheap, perfect for carry on with your laptop, silent, comfy and very, very pretty. You can use it with Bluetooth or with it&apos;s 2.4GHz dongle</p>
             </div>
         </div>
     );

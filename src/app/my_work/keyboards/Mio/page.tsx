@@ -33,7 +33,7 @@ export default function Home() {
                 </p>
                 <p className="text-right xl:text-2xl mt-6">This keyboard has 3 types of connection, USB-C, 2.4 GHz Dongle and Bluetooth.</p>
                 <p className="text-left xl:text-2xl mt-6">I highly recommend this keyboard, it has a lot of stock modifications done, it&apos;s cheap and well built, 
-                    and easy to custom.
+                    and easy to custom. 
                 </p>
             </div>
         </div>
