@@ -20,6 +20,8 @@ With this decision, I want to **provide users with complete transparency in what
 
 This website is developed in **Next.js**, using **Tailwind** and **CSS** for styling and **Typescript** as an alternative for JS.
 
+Using **LDRS** for animated loaders!
+
 I also use **Hostinger** for the website's domain and **Firebase** for hosting.
 
 Running the backend on **Google Cloud** and using **Sendgrid** to make the contact form and the SQL API works.
