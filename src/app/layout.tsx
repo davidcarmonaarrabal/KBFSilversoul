@@ -50,11 +50,12 @@ export default function RootLayout({
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
             >
+              <script type="module" defer src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/quantum.js"></script>
               {children}
             </motion.div>
           </AnimatePresence>
         </div>
-        <Footer></Footer> 
+        <Footer></Footer>
       </body>
     </html>
   );

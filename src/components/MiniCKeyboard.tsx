@@ -4,7 +4,9 @@ import React, { useEffect, useState } from "react";
 import { MousePointerClick } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import type {} from 'ldrs'
+import type { } from 'ldrs'
+import Loader from "./Loader";
+
 
 interface KeyboardData {
     name: string;
@@ -44,8 +46,8 @@ const MiniCKeyboard: React.FC = () => {
     }, [keyboardData]);
 
     if (keyboardData.length === 0) {
-        return <div className="text-black text-2xl"> 
-            Loading...  
+        return <div className="text-black text-2xl">
+            <Loader></Loader>
         </div>;
     }
 
