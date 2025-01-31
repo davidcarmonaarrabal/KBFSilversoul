@@ -13,19 +13,19 @@ export default function Home() {
                     className="border-black border-4 rounded-lg xl:w-[800px] xl:h-[600px] "/>
             </div>
             <div className="pt-4 flex flex-col mb-4">
-                <h1 className="text-2xl xl:text-4xl">Retro Screen Keyboard TKL</h1>
-                <p className="text-left xl:text-2xl mt-6">This Keyboard brings you back to the 90&apos;s! Not fully modded, but for me, the best option for a low budget.
+                <h1 className="text-2xl xl:text-4xl">Pokémon Keyboard 75%</h1>
+                <p className="text-left xl:text-2xl mt-6">If you are a Pokémon lover, you will also love this Keyboard. Not fully modded, but for me, a great option.
                 </p>
-                <p className="text-right xl:text-2xl mt-6">This keyboard is an <Link href={'https://s.click.aliexpress.com/e/_oCD9rVx'} className={`${classLink}`}>Attack Shark K86</Link>, 
+                <p className="text-right xl:text-2xl mt-6">This keyboard is an <Link href={'https://s.click.aliexpress.com/e/_olsMe4V'} className={`${classLink}`}>AJAZZ AK820Pro</Link>, 
                 is <Link href={'/mods/Connections'} className={`${classLink}`} target="_blank">Hot-Swappable</Link>, this
                     means that I can easily change
                     the <Link href={'/mods/Types_Switches'} className={`${classLink}`}>switches</Link> whenever I want.
                 </p>
-                <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses tactile switches, specifically AKKO Cream Blue Pro V3</p>
-                <Switch switchId={6}></Switch>
+                <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses tactile switches, specifically AKKO Penguin Silent</p>
+                <Switch switchId={8}></Switch>
                 <p className="text-right xl:text-2xl mt-6">This keyboard is perfect for gaming, also an excellent option to code, 
-                    with an discrete but beautiful RGB, a very simple software and no-ghosting design, this is for me the best cheap keyboard, 
-                    it comes with isolation, tapemod, and a gasket mounting, which reduces vibration transmissions. Also, this keyboard has a knob to control
+                    with an discrete but beautiful RGB, a very simple software and no-ghosting design, 
+                    it comes with isolation and tapemod, which reduces vibration transmissions. Also, this keyboard has a knob to control
                     volume or any function you programe on it, and a mini LCD screen to insert any GIF o see the battery, time, etc.
                 </p>
                 <p className="text-left xl:text-2xl mt-6">Talking about <Link href={'/mods'} className={`${classLink}`}>mods</Link>, this keyboard has new switches (the stock ones are Linear) 

@@ -16,7 +16,7 @@ export default function Home() {
                 <h1 className="text-2xl xl:text-4xl">Chopper Keyboard 75%</h1>
                 <p className="text-left xl:text-2xl mt-6">Enjoy One Piece also when you are gaming with this keyboard! Mugiwaras, this is for you!
                 </p>
-                <p className="text-right xl:text-2xl mt-6">This keyboard is an <Link href={'https://s.click.aliexpress.com/e/_oCD9rVx'} className={`${classLink}`}>ZOUYA Tester84</Link>, 
+                <p className="text-right xl:text-2xl mt-6">This keyboard is an <Link href={'https://s.click.aliexpress.com/e/_oF86c5n'} className={`${classLink}`}>ZOUYA Tester84</Link>, 
                 is <Link href={'/mods/Connections'} className={`${classLink}`} target="_blank">Hot-Swappable</Link>, this
                     means that I can easily change
                     the <Link href={'/mods/Types_Switches'} className={`${classLink}`}>switches</Link> whenever I want.

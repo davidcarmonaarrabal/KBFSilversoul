@@ -16,7 +16,7 @@ export default function Home() {
                 <h1 className="text-2xl xl:text-4xl">EVA 01 Spanish Keyboard 96%</h1>
                 <p className="text-left xl:text-2xl mt-6">The perfect keyboard for gaming, we all know gamers loves Evangelion.
                 </p>
-                <p className="text-right xl:text-2xl mt-6">This keyboard uses a <Link href={'https://s.click.aliexpress.com/e/_opAGTzL'} className={`${classLink}`}>Glorious GMMK96</Link> as
+                <p className="text-right xl:text-2xl mt-6">This keyboard uses a <Link href={'https://amzn.to/4jSEuur'} className={`${classLink}`}>Glorious GMMK96</Link> as
                     a base, this base is <Link href={'/mods/Connections'} className={`${classLink}`} target="_blank">Hot-Swappable</Link>, this
                     means that I can easily change
                     the <Link href={'/mods/Types_Switches'} className={`${classLink}`}>switches</Link> whenever I want.
