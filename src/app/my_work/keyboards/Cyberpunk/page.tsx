@@ -13,24 +13,21 @@ export default function Home() {
                     className="border-black border-4 rounded-lg xl:w-[800px] xl:h-[600px] "/>
             </div>
             <div className="pt-4 flex flex-col mb-4">
-                <h1 className="text-2xl xl:text-4xl">K95 Platinum Keycaps Changed</h1>
-                <p className="text-left xl:text-2xl mt-6">The perfect keyboard for gaming and streaming.
+                <h1 className="text-2xl xl:text-4xl">Cyberpunk 2077 TKL</h1>
+                <p className="text-left xl:text-2xl mt-6">Welcome to Night City, let&apos;s enjoy this Keyboard!
                 </p>
-                <p className="text-right xl:text-2xl mt-6">This keyboard uses a <Link href={'https://www.corsair.com/es/es/p/keyboards/ch-9127014-es/k95-rgb-platinum-mechanical-gaming-keyboard-a-cherrya-mx-speed-a-black-es-ch-9127014-es?srsltid=AfmBOopbpvCKd6Ehq0AR078us2BHC2gAR4_GGGE2sTqZtkR4XvxaFcv7'} className={`${classLink}`}>Corsair K95 RGB Platinum</Link> as
+                <p className="text-right xl:text-2xl mt-6">This keyboard uses a <Link href={'https://www.pccomponentes.com/newskill-serike-tkl-teclado-mecanico-gaming-full-rgb-switch-red?srsltid=AfmBOor50jQ-f80o_yZ8H_wlLYTZxf0936Ap_c0MrHK6WfDk3xrT41jf'} className={`${classLink}`}>Newskill Serike TKL</Link> as
                     a base, this base is not <Link href={'/mods/Connections'} className={`${classLink}`} target="_blank">Hot-Swappable</Link>, this
                     means that I have to weld all 
                     the <Link href={'/mods/Types_Switches'} className={`${classLink}`}>switches</Link>.
                 </p>
-                <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses stock switches, specifically CHERRY MX Speed</p>
-                <Switch switchId={13}></Switch>
+                <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses linear switches, specifically OUTEMU Peach V2</p>
+                <Switch switchId={5}></Switch>
                 <p className="text-right xl:text-2xl mt-6">This keyboard is perfect for gaming, 
-                    with a full-size, you can have long sessions of gaming without issues.
-                    Also, with the Macro Keys, you can use ElGato Streamdeck functionalities.
-                    We also know the major problem of Corsair Keyboards are the keycaps, I solved it using some 
-                    external white keycaps that creates a nice contrast and style.
+                    being TKL and extremely Silent, you can have long sessions of gaming without issues.
                 </p>
                 <p className="text-left xl:text-2xl mt-6">Talking about <Link href={'/mods'} className={`${classLink}`}>mods</Link>;  
-                    this one has no mods done.
+                    This Keyboard has a lot of mods done, starting with the switches changes, the brand new ones are manually lubed, I also did a foam and tape mod to this Keyboard and changed the Keycaps to a CyberPunk 2077 themed ones.
                 </p>
                 <p className="text-right xl:text-2xl mt-6">You can use it with USB.
                 </p>
