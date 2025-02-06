@@ -22,7 +22,7 @@ export default function Home() {
                     the <Link href={'/mods/Types_Switches'} className={`${classLink}`}>switches</Link> whenever I want.
                 </p>
                 <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses stock switches, specifically CHERRY MX Speed</p>
-                <Switch switchId={2}></Switch>
+                <Switch switchId={13}></Switch>
                 <p className="text-right xl:text-2xl mt-6">This keyboard is perfect for gaming, 
                     with a full-size, you can have long sessions of gaming without issues.
                     Also, with the Macro Keys, you can use ElGato Streamdeck functionalities.
