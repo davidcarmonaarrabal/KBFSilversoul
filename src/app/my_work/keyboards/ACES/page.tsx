@@ -13,20 +13,20 @@ export default function Home() {
                     className="border-black border-4 rounded-lg xl:w-[800px] xl:h-[600px] "/>
             </div>
             <div className="pt-4 flex flex-col mb-4">
-                <h1 className="text-2xl xl:text-4xl">Animal Crossing English Keyboard TKL</h1>
-                <p className="text-left xl:text-2xl mt-6">The perfect restauration for a keyboard that was about being trashed.
+                <h1 className="text-2xl xl:text-4xl">Animal Crossing Spanish Keyboard TKL</h1>
+                <p className="text-left xl:text-2xl mt-6">Welcome to Animal Crossing! Now let&apos;s chill and play some time!
                 </p>
-                <p className="text-right xl:text-2xl mt-6">This keyboard uses a Ziyoulang TKL as
+                <p className="text-right xl:text-2xl mt-6">This keyboard uses a <Link href={'https://amzn.to/4aG415v'} className={`${classLink}`}>Mars Gaming MKXTKL</Link> as
                     a base, this base is not <Link href={'/mods/Connections'} className={`${classLink}`} target="_blank">Hot-Swappable</Link>, this
                     means that I have to weld every switch manually.
                 </p>
-                <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses tactile switches, specifically OUTEMU Silent Cream Yellow</p>
-                <Switch switchId={12}></Switch>
+                <p className="text-left xl:text-2xl mt-6">In this case, this Keyboard uses linear switches, specifically ATTACK SHARK Blue Whale</p>
+                <Switch switchId={11}></Switch>
                 <p className="text-right xl:text-2xl mt-6">This Keyboard is for me the meaning of refurbishing, don&apos;s throw away an old Keyboard, it will always have a salvation! Also, with everything modded, 
                     this one is perfect for extremely comfy gaming sessions, writing or coding, with RGB and no ghosting, it&apos;s an amazing upgrade considering where it comes from.
                 </p>
                 <p className="text-left xl:text-2xl mt-6">Talking about <Link href={'/mods'} className={`${classLink}`}>mods</Link>;  
-                    first of all, I&apos;ve isolated with some foam, made a Tape Mod and clipped the stabs after lubbing them. Changed stabs, also, lubbed all the 
+                    first of all, I&apos;ve isolated with some foam, made a Tape Mod and clipped the stabs after lubbing them. Also, lubbed all the 
                     switches and added some 3D printed parts to the bottom of the keyboard to make it more inclined.
                 </p>
                 <p className="text-right xl:text-2xl mt-6">This Keyboard is extremely cheap. You can use it with USB connection.</p>
