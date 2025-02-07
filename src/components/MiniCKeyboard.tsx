@@ -68,7 +68,7 @@ const MiniCKeyboard: React.FC = () => {
             {/* Botón Anterior (fuera del div principal) */}
             <button
                 onClick={handlePrev}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-yellow-200 p-2 rounded-md hover:bg-yellow-300 border-black border-2"
             >
                 <ChevronLeft size={30} />
             </button>
@@ -115,7 +115,7 @@ const MiniCKeyboard: React.FC = () => {
             {/* Botón Siguiente (fuera del div principal) */}
             <button
                 onClick={handleNext}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2  bg-yellow-200 p-2 rounded-md hover:bg-yellow-300 border-black border-2"
             >
                 <ChevronRight size={30} />
             </button>
@@ -126,7 +126,7 @@ const MiniCKeyboard: React.FC = () => {
                     <button
                         key={index}
                         onClick={() => selectKeyboard(index)}
-                        className={`w-3 h-3 rounded-full transition ${index === currentKeyboardIndex ? "bg-black" : "bg-gray-300 hover:bg-gray-400"
+                        className={`w-3 h-3 rounded-full transition ${index === currentKeyboardIndex ? "bg-black" : "bg-yellow-400 hover:bg-yellow-600"
                             }`}
                     />
                 ))}
