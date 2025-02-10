@@ -32,4 +32,4 @@ You can [visit my website here](https://davidca.es/)! For now, the domain is ***
 
 # What Am I developing right now?
 
-Now, I'm focushing on ***"My work"*** part, developing the API for the SQL connections, and working both, the *Frontend* and *Backend*, by now, I'm working on the **Keyboard web-page**, will be followed by the **implementation of all Keyboards**, then, will do **animations for the carrousel** and finally **add some navigation utilities** on it.
+Now, I'm focushing on ***"My work"*** part, developing the API for the SQL connections, and working both, the *Frontend* and *Backend*, by now, I'll be working on the Keyboard tester, at leats de ANSI US version. Also, by the following weeks, I want to migrate the website to ***kbf.es*** and start developing a portfolio website that uses davidca.es.
