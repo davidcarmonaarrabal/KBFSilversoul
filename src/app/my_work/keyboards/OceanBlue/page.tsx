@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-col m-4 bg-white border-black border-4 rounded-xl p-4
         shadow-[5px_5px_0px_rgba(0,0,0,0.1)]">
             <div className="flex flex-col items-center justify-center">
-                <Image src={'/img/keyboards/ShinChan.webp'} alt="Shin Chan Keyboard" width={600} height={400}
+                <Image src={'/img/keyboards/BlueKB.webp'} alt="Shin Chan Keyboard" width={600} height={400}
                     className="border-black border-4 rounded-lg xl:w-[800px] xl:h-[600px] "/>
             </div>
             <div className="pt-4 flex flex-col mb-4">
