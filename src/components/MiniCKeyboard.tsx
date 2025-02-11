@@ -68,7 +68,7 @@ const MiniCKeyboard: React.FC = () => {
     };
 
     return (
-        <div className="relative flex flex-col items-center">
+        <div className="relative flex flex-col items-center text-black">
             {/* Botón Anterior */}
             <button
                 onClick={handlePrev}
@@ -134,7 +134,7 @@ const MiniCKeyboard: React.FC = () => {
             </button>
 
             {/* Indicadores de paginación */}
-            <div className="flex justify-center mt-4 space-x-2">
+            <div className="flex justify-center mt-4 space-x-2 mb-4">
                 {keyboardData.map((_, index) => (
                     <button
                         key={index}
