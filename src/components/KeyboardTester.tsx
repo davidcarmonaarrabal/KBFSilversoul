@@ -46,7 +46,6 @@ const KeyboardTester: React.FC = () => {
 
       // Normalizamos la tecla, en algunos casos `event.key` puede ser el mismo que `event.code`
       const key = event.key === " " ? "Space" : event.key;
-      const keyCode = event.code.toLowerCase();
 
       // Añadir la tecla al conjunto de teclas presionadas
       setPressedKeys((prevKeys) => new Set(prevKeys).add(key.toLowerCase()));
@@ -55,7 +54,6 @@ const KeyboardTester: React.FC = () => {
     const handleKeyUp = (event: KeyboardEvent) => {
       // Normalizamos la tecla
       const key = event.key === " " ? "Space" : event.key;
-      const keyCode = event.code.toLowerCase();
 
       // Añadir la tecla al conjunto de teclas liberadas (para color amarillo)
       setReleasedKeys((prevReleased) => new Set(prevReleased).add(key.toLowerCase()));
