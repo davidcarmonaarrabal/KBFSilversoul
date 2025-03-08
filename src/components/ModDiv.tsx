@@ -7,6 +7,7 @@ interface ModsDivProps {
     link: string;
 }
 
+
 const ModsDiv: React.FC<ModsDivProps> = ({ url, name, link }) => {
     return (
         <Link href={link}>
